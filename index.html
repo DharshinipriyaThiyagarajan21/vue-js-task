@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <div class="row" id="app">
+      <div class="col-sm-12">
+        <div id="inputform" >
+          <input id="wid" v-model="widthVal" type="text" placeholder="Enter the width"><br><br>
+          <input type="text"  v-model="heightVal" id="high" placeholder="Enter the height">
+          <br><br>
+          </div>
+          <div class="btn">
+            <button v-on:click="insert()">Insert</button>
+          </div>
+          <br><br>
+        </div>
+      </div>
+        <div id="grid" class="grid">
+        </div>   
+    </div>
+
+<!-- <script src="js/vue-masonry.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
